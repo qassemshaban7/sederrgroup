@@ -20,9 +20,8 @@
     return `
 <div class="official-bar" role="note">
   <div class="official-bar-inner">
-    <span>سدر للخدمات — تابعنا على <strong>LinkedIn</strong> للتحقق من هوية الشركة</span>
+
     <span class="official-bar-links">
-      <a href="${li}" target="_blank" rel="noopener noreferrer" class="official-bar-linkedin">صفحة ${corpName} على LinkedIn</a>
       <span aria-hidden="true">|</span>
       <a href="${corp}" target="_blank" rel="noopener noreferrer">${corpName}</a>
     </span>
@@ -44,10 +43,6 @@ ${officialBar()}
       ${pages.map((p) => navLink(p, active)).join("")}
     </div>
     <div class="nav-actions">
-      <a href="${C.officialLinkedIn}" target="_blank" rel="noopener noreferrer" class="btn btn-linkedin btn-lg hide-sm" title="LinkedIn - SEDER GROUP">
-        ${linkedInIcon}
-        <span>LinkedIn</span>
-      </a>
       <a href="${WA}" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-lg hide-sm">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
         <span>واتساب</span>
