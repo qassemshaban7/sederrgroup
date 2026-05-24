@@ -23,7 +23,6 @@
 
     <span class="official-bar-links">
       <span aria-hidden="true">|</span>
-      // <a href="${corp}" target="_blank" rel="noopener noreferrer">${corpName}</a>
     </span>
   </div>
 </div>`;
