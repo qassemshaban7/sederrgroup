@@ -16,13 +16,13 @@
   function officialBar() {
     const corp = C.officialCorporateUrl || "https://sedergroup.com";
     const li = C.officialLinkedIn || "#";
-    const corpName = C.officialCorporateName || "SEDER GROUP";
     return `
 <div class="official-bar" role="note">
   <div class="official-bar-inner">
 
     <span class="official-bar-links">
       <span aria-hidden="true">|</span>
+      <a href="${corp}" target="_blank" rel="noopener noreferrer">${corpName}</a>
     </span>
   </div>
 </div>`;
