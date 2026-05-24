@@ -16,7 +16,6 @@
   function officialBar() {
     const corp = C.officialCorporateUrl || "https://sedergroup.com";
     const li = C.officialLinkedIn || "#";
-    const corpName = C.officialCorporateName || "SEDER GROUP";
     return `
 <div class="official-bar" role="note">
   <div class="official-bar-inner">
