@@ -1,16 +1,12 @@
 /**
- * ═══════════════════════════════════════════════════════════════
- *  النطاق الرسمي للموقع (يجب ربطه في Vercel → Settings → Domains)
- *  لا تعتمد على sederrgroup.vercel.app للعملاء أو لمحركات البحث
- * ═══════════════════════════════════════════════════════════════
+ * النطاق الأساسي للموقع (Vercel)
+ * أضف نفس الرابط في LinkedIn → Company Page → Website
  */
 window.SIDER_CONFIG = {
   siteName: "سدر للخدمات",
-  /** النطاق الرسمي لصفحة الخدمات — غيّره إذا كان مختلفاً */
-  siteUrl: "https://sederrgroup.com",
-  /** رابط Vercel المؤقت (للتجربة فقط) */
-  vercelPreviewUrl: "https://sederrgroup.vercel.app",
-  /** الموقع الرسمي المعتمد لمجموعة سدر */
+  siteUrl: "https://sederrgroup.vercel.app",
+  /** عند ربط sederrgroup.com في Vercel يعمل كنسخة إضافية لنفس الموقع */
+  customDomain: "https://sederrgroup.com",
   officialCorporateName: "SEDER GROUP",
   officialCorporateUrl: "https://sedergroup.com",
   officialLinkedIn: "https://www.linkedin.com/company/seder-group-sg",

@@ -91,6 +91,22 @@ ul {
   color: #fff;
 }
 
+.official-bar-linkedin {
+  color: #7dd3fc !important;
+}
+
+.btn-linkedin {
+  background: #0a66c2;
+  color: #fff;
+  border: none;
+  box-shadow: 0 2px 8px rgba(10, 102, 194, 0.35);
+}
+
+.btn-linkedin:hover {
+  background: #004182;
+  color: #fff;
+}
+
 /* Header */
 .site-header {
   position: sticky;

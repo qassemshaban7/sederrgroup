@@ -1,29 +1,27 @@
-# ربط النطاق الرسمي (مهم جداً)
+# الموقع + LinkedIn
 
-## لماذا يظهر تحذير على sederrgroup.vercel.app؟
+## الرابط الأساسي
+**https://sederrgroup.vercel.app**
 
-- `*.vercel.app` نطاق **تجريبي** من Vercel وليس موقع الشركة الرسمي.
-- الموقع المعتمد للمجموعة: **https://sedergroup.com**
-- LinkedIn المعتمد: **https://www.linkedin.com/company/seder-group-sg**
-- محركات البحث لا تثق بنفس قوة النطاق الرسمي `sederrgroup.com`.
+## ربط LinkedIn بالموقع (مهم)
 
-## الخطوات في Vercel
+1. سجّل دخول كمسؤول لصفحة الشركة:  
+   https://www.linkedin.com/company/seder-group-sg
+2. **Edit page** → **Page info** → **Website**
+3. ضع: `https://sederrgroup.vercel.app`
+4. احفظ.
 
-1. افتح مشروعك في [Vercel Dashboard](https://vercel.com).
-2. **Settings → Domains**
-3. أضف: `sederrgroup.com` و `www.sederrgroup.com`
-4. في لوحة تحكم النطاق (Hostinger أو غيره) أضف سجلات DNS كما يطلب Vercel (عادة `A` أو `CNAME`).
-5. بعد التفعيل، الزوار على `sederrgroup.vercel.app` يُحوَّلون تلقائياً إلى `sederrgroup.com`.
+بهذا يظهر موقعك في LinkedIn ويربط الزوار بين المنصتين.
 
-## Google Search Console
+## sederrgroup.com (اختياري)
 
-1. سجّل **sederrgroup.com** (وليس vercel.app).
-2. أرسل: `https://sederrgroup.com/sitemap.xml`
+إذا أردت أن يعمل `sederrgroup.com` **مع** Vercel (بدون إلغاء vercel.app):
 
-## إذا لم يكن لديك sederrgroup.com
+1. Vercel → **Settings → Domains** → أضف `sederrgroup.com`
+2. عدّل DNS عند مسجّل النطاق كما يطلب Vercel
+3. لا تفعّل تحويلاً يُلغي vercel.app — النطاقان يمكن أن يشيران لنفس المشروع
 
-اطلب من قسم IT في SEDER GROUP إنشاء نطاق فرعي مثل:
+## Google
 
-`services.sedergroup.com`
-
-ثم غيّر `siteUrl` في `js/site-config.js` إلى هذا النطاق.
+سجّل في Search Console: `https://sederrgroup.vercel.app`  
+وأرسل: `https://sederrgroup.vercel.app/sitemap.xml`

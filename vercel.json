@@ -11,14 +11,6 @@
       ]
     }
   ],
-  "redirects": [
-    {
-      "source": "/:path*",
-      "has": [{ "type": "host", "value": "sederrgroup.vercel.app" }],
-      "destination": "https://sederrgroup.com/:path*",
-      "permanent": true
-    }
-  ],
   "rewrites": [
     { "source": "/services", "destination": "/services.html" },
     { "source": "/about", "destination": "/about.html" },
