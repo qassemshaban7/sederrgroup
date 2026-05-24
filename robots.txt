@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# غيّر الرابط أدناه إلى نطاقك بعد الرفع
+Sitemap: https://sederrgroup.vercel.app/sitemap.xml
