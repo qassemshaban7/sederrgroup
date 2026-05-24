@@ -1,10 +1,19 @@
 /**
- * غيّر siteUrl إلى نطاقك الحقيقي بعد رفع الموقع على Hostinger
- * النشر: https://sederrgroup.vercel.app
+ * ═══════════════════════════════════════════════════════════════
+ *  النطاق الرسمي للموقع (يجب ربطه في Vercel → Settings → Domains)
+ *  لا تعتمد على sederrgroup.vercel.app للعملاء أو لمحركات البحث
+ * ═══════════════════════════════════════════════════════════════
  */
 window.SIDER_CONFIG = {
   siteName: "سدر للخدمات",
-  siteUrl: "https://sederrgroup.vercel.app",
+  /** النطاق الرسمي لصفحة الخدمات — غيّره إذا كان مختلفاً */
+  siteUrl: "https://sederrgroup.com",
+  /** رابط Vercel المؤقت (للتجربة فقط) */
+  vercelPreviewUrl: "https://sederrgroup.vercel.app",
+  /** الموقع الرسمي المعتمد لمجموعة سدر */
+  officialCorporateName: "SEDER GROUP",
+  officialCorporateUrl: "https://sedergroup.com",
+  officialLinkedIn: "https://www.linkedin.com/company/seder-group-sg",
   phoneDisplay: "0532265519",
   phoneTel: "+966532265519",
   whatsapp: "966532265519",

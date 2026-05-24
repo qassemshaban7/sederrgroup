@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 # غيّر الرابط أدناه إلى نطاقك بعد الرفع
-Sitemap: https://sederrgroup.vercel.app/sitemap.xml
+Sitemap: https://sederrgroup.com/sitemap.xml

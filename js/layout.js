@@ -13,8 +13,26 @@
     return `<a href="${page.href}" class="${cls}">${page.label}</a>`;
   }
 
+  function officialBar() {
+    const corp = C.officialCorporateUrl || "https://sedergroup.com";
+    const li = C.officialLinkedIn || "#";
+  const corpName = C.officialCorporateName || "SEDER GROUP";
+    return `
+<div class="official-bar" role="note">
+  <div class="official-bar-inner">
+    <span>موقع خدمات معتمد تابع لـ <strong>${corpName}</strong></span>
+    <span class="official-bar-links">
+      <a href="${corp}" target="_blank" rel="noopener noreferrer">الموقع الرسمي للمجموعة</a>
+      <span aria-hidden="true">|</span>
+      <a href="${li}" target="_blank" rel="noopener noreferrer">LinkedIn المعتمد</a>
+    </span>
+  </div>
+</div>`;
+  }
+
   function header(active) {
     return `
+${officialBar()}
 <header class="site-header">
   <nav class="nav-inner" aria-label="التنقل الرئيسي">
     <a href="index.html" class="logo" title="${C.siteName}">
@@ -61,7 +79,7 @@
     return `
 <footer class="site-footer">
   <div class="footer-inner">
-    <div class="footer-grid">
+    <div class="footer-grid footer-grid-5">
       <div>
         <div class="footer-brand"><span>سدر</span><span class="accent"> للخدمات</span></div>
         <p class="footer-desc">حلول بيئية متكاملة لإدارة النفايات ونقل المياه في المملكة العربية السعودية</p>
@@ -85,6 +103,13 @@
           <li><a href="services.html">الخدمات</a></li>
           <li><a href="about.html">من نحن</a></li>
           <li><a href="contact.html">التواصل</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>المجموعة الرسمية</h3>
+        <ul class="footer-links">
+          <li><a href="${C.officialCorporateUrl}" target="_blank" rel="noopener noreferrer">${C.officialCorporateName} — الموقع الرسمي</a></li>
+          <li><a href="${C.officialLinkedIn}" target="_blank" rel="noopener noreferrer">صفحة LinkedIn المعتمدة</a></li>
         </ul>
       </div>
     </div>

@@ -54,6 +54,43 @@ ul {
   list-style: none;
 }
 
+/* Official corporate trust bar */
+.official-bar {
+  background: #0f172a;
+  color: #e2e8f0;
+  font-size: 0.8rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.official-bar-inner {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem 1rem;
+}
+
+.official-bar-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.official-bar a {
+  color: var(--secondary);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.official-bar a:hover {
+  color: #fff;
+}
+
 /* Header */
 .site-header {
   position: sticky;
@@ -639,6 +676,16 @@ main {
 @media (min-width: 1024px) {
   .footer-grid {
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  .footer-grid.footer-grid-5 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1280px) {
+  .footer-grid.footer-grid-5 {
+    grid-template-columns: repeat(5, 1fr);
   }
 
   .footer-inner {
